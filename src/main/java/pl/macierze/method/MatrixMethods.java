@@ -57,6 +57,19 @@ public class MatrixMethods {
         return score;
     }
 
+    public int[][] addT() {
+        sum = new int[rows][cols];
+        for (int i = 0; i < rows; i++) {
+
+            for (int j = 0; j < cols; j++) {
+
+                sum[i][j] = firstMatrix[i][j] + secondMatrix[i][j];
+            }
+        }
+
+        return sum;
+    }
+
     /**
      *
      * @return
@@ -86,6 +99,20 @@ public class MatrixMethods {
             System.out.println();
         }
         return score;
+    }
+
+    public int[][] divT() {
+        div = new int[rows][cols];
+
+        for (int i = 0; i < rows; i++) {
+
+            for (int j = 0; j < cols; j++) {
+                System.out.println(firstMatrix[i][j]);
+                div[i][j] = firstMatrix[i][j] / secondMatrix[i][j];
+            }
+        }
+
+        return div;
     }
 
     /**
@@ -119,6 +146,20 @@ public class MatrixMethods {
         return score;
     }
 
+    public int[][] multiT() {
+        multi = new int[rows][cols];
+
+        for (int i = 0; i < rows; i++) {
+
+            for (int j = 0; j < cols; j++) {
+
+                multi[i][j] = firstMatrix[i][j] * secondMatrix[i][j];
+            }
+        }
+
+        return multi;
+    }
+
     public String sub() {
         String score = "";
         sub = new int[rows][cols];
@@ -143,6 +184,19 @@ public class MatrixMethods {
             System.out.println();
         }
         return score;
+    }
+
+    public int[][] subT() {
+        sub = new int[rows][cols];
+        for (int i = 0; i < rows; i++) {
+
+            for (int j = 0; j < cols; j++) {
+
+                sub[i][j] = firstMatrix[i][j] - secondMatrix[i][j];
+            }
+        }
+
+        return sub;
     }
 
 }
