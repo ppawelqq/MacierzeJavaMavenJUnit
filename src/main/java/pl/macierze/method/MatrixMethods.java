@@ -27,10 +27,6 @@ public class MatrixMethods {
 
     }
 
-    /**
-     *
-     * @return
-     */
     public String add() {
         String score = "";
         sum = new int[rows][cols];
